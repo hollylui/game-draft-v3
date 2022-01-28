@@ -1,0 +1,26 @@
+// Navbar conainter -------------------
+.container {
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 217, 255);
+}
+
+// music control -----------------------
+
+.musicControl {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+//Menu setting -------------------------
+.menu {
+  width: 70px;
+}
+
+//dry ----------------------------------
+.margin {
+  margin: 0 20px;
+}

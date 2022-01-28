@@ -1,0 +1,14 @@
+// Footer container -----------------------
+.container {
+  width: 100vw;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 90px auto 90px;
+  padding: 0 20px;
+}
+
+// Buttons ---------------------------------
+.btn {
+  width: 90px;
+  cursor: pointer;
+}

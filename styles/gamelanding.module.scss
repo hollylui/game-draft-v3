@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+
+  .landing {
+    position: relative;
+    overflow: hidden;
+
+    .position {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-size: 3rem;
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
