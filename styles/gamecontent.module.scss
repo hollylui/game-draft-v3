@@ -1,42 +1,138 @@
 .container {
   width: 80%;
   position: relative;
+  min-height: 400px;
 
   .content {
-    font-size: 2rem;
-    margin: auto;
+    font-size: 1.5rem;
+    margin: 0 auto;
 
-    width: 60%;
-    height: 300px;
-    padding: 30px;
-    border-radius: 20px;
-    background-color: rgb(251, 255, 4);
-    clip-path: polygon(
-      0% 0%,
-      100% 0%,
-      100% 75%,
-      75% 75%,
-      75% 100%,
-      50% 75%,
-      0% 75%
-    );
+    max-width: 700px;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: #fbff0491;
+    // clip-path: polygon(
+    //   0% 0%,
+    //   100% 0%,
+    //   100% 75%,
+    //   75% 75%,
+    //   75% 100%,
+    //   50% 75%,
+    //   0% 75%
+    // );
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    //Images ---------------------------------
-  
-      .mapAndBackpack {
-        display: flex;
+    //index 5 and index 6 ---------------------------------
 
-        top: 150px;
-        z-index: 1000;
+    .mapAndBackpack {
+      display: flex;
 
-        .image {
-          width: 100px;
-        }
+      top: 150px;
+      z-index: 1000;
+
+      .image {
+        width: 100px;
       }
+    }
+
+    // index 6 ------------------------
+    h3 {
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    .hint {
+      font-size: 1.3rem;
+    }
+
+    // large map ------------------------
+
+    .largeMap {
+      position: absolute;
+      z-index: 1000;
+      top: 0;
+      background-color: white;
+      width: 750px;
+
+      .close {
+        position: absolute;
+        right: 88px;
+        bottom: 100px;
+        width: 50px;
+        height: 50px;
+        background-color: #88ff00;
+        z-index: 1000;
+        cursor: pointer;
+      }
+    }
+
+    // index 8 ------------------------
+    .indexEight {
+      position: relative;
+      margin: 10px 0;
+
+      .mainBackpack {
+        width: 500px;
+      }
+
+      .stick {
+        position: absolute;
+        width: 60px;
+        top: 45px;
+        left: 105px;
+      }
+
+      .icicle {
+        position: absolute;
+        width: 30px;
+        top: 40px;
+        left: 200px;
+      }
+    }
+
+    // index 9 --------------------------
+    .indexNine {
+      margin: 20px 0;
     }
   }
 
+  // index 11 ----------------------------
+  .indexEleven {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+  }
+
+  // index 12 --------------------------
+  .indexTwelve {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+
+    .crossroad {
+      width: 250px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .indexTwelveMessage {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  // index 13 -------------------------------
+  .indexThirdteen {
+    width: 200px;
+    margin: 20px 0;
+  }
+}

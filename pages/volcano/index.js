@@ -41,6 +41,7 @@ export async function getServerSideProps(context) {
 
     const data = await db.collection("volcano_v2").find({}).toArray();
     const games = JSON.parse(JSON.stringify(data));
+
     return {
       props: { games },
     };

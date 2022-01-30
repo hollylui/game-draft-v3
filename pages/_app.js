@@ -8,6 +8,10 @@ function MyApp({ Component, pageProps }) {
   const [start, setStart] = useState(false);
   const [data, setData] = useState(null);
   const [name, setName] = useState(null);
+  const [expand, setExpand] = useState(false);
+  const [branchOne, setBranchOne] = useState(null);
+  const [branchIndex, setBranchIndex] = useState(0);
+  const [branchData, setBranchData] = useState(null);
 
   return (
     <AppContext.Provider
@@ -20,6 +24,14 @@ function MyApp({ Component, pageProps }) {
         setData,
         name,
         setName,
+        expand,
+        setExpand,
+        branchOne,
+        setBranchOne,
+        branchIndex,
+        setBranchIndex,
+        branchData,
+        setBranchData,
       }}
     >
       <Component {...pageProps} />
