@@ -59,6 +59,7 @@ export default function Footer() {
         <Image src={BackBtn} alt="back button" onClick={backHandler} />
       </div>
 
+      {/* backpack */}
       {index === 6 ||
       index === 7 ||
       index === 8 ||
