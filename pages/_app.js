@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../styles/globals.css";
 
 import AppContext from "../context/AppContext";
+import GameProvider from "../context/GameProvider";
 
 function MyApp({ Component, pageProps }) {
   const [index, setIndex] = useState(0);
@@ -34,7 +35,9 @@ function MyApp({ Component, pageProps }) {
         setBranchData,
       }}
     >
-      <Component {...pageProps} />
+      <GameProvider>
+        <Component {...pageProps} />
+      </GameProvider>
     </AppContext.Provider>
   );
 }

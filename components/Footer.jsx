@@ -9,6 +9,7 @@ import NextBtn from "../assets/images/volcano/next.png";
 import AppContext from "../context/AppContext";
 import Main_Backpack from "../assets/images/volcano/Main_backpack.png";
 import AnimalCounter from "../assets/images/volcano/Animal_counter.png";
+import Backpack from "./Backpack";
 
 //! Styles
 import FooterStyles from "../styles/footer.module.scss";
@@ -69,9 +70,10 @@ export default function Footer() {
       index === 12 ||
       index === 13 ? (
         <div className={FooterStyles.collection}>
-          <span className={FooterStyles.backpack}>
-            <Image src={Main_Backpack} width={350} height={90} />
-          </span>
+          {/* <span className={FooterStyles.backpack}> */}
+          {/* <Image src={Main_Backpack} width={350} height={90} /> */}
+          <Backpack />
+          {/* </span> */}
           <Image src={AnimalCounter} width={110} height={80} />
         </div>
       ) : (
