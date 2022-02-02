@@ -7,10 +7,17 @@
   padding: 0 20px;
 
   .collection {
-    justify-self: center;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // justify-self: center;
 
     .backpack {
-      margin-right: 20px;
+      // margin-right: 20px;
+      width: 70%;
+      min-width: 60rem;
+      // padding-bottom: 1rem;
     }
   }
 }
